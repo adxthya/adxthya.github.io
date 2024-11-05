@@ -15,120 +15,55 @@ body {
 }
 
 a {
-  color: #81a5de;
+  color: #00bcd4;
 }
 
 a:visited {
-  color: #9e90b7;
+  color: #0097a7;
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20px;
 }
-
-.inner-container {
-  width: 75%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-}
-
 .title {
-  font-size: 20px;
-  font-weight: 500;
+  font-size: 25px;
   color: cyan;
-}
-
-.header-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
-  gap: 10px;
-  width: fit-content;
   text-align: center;
-}
-
-.line {
-  border: cyan solid 1px;
-}
-
-.portfolio {
-  padding-top: 10px;
-  text-align: center;
-}
-
-.nav {
-  display: flex;
-  justify-content: center;
-  gap: 3rem;
-  text-align: center;
-  border: cyan solid 1px;
-  border-radius: 5px;
-  padding: 10px 0px;
-  margin: 20px 0px;
-  position: relative;
-}
-
-.second-section {
-  display: flex;
-  gap: 10px;
-}
-
-.sub-title {
-  position: absolute;
-  left: 15px;
-  top: -12px;
-  background: #0f1010;
+  text-decoration: underline;
+  padding: 20px;
 }
 
 .content {
   display: flex;
   flex-direction: column;
-  border: cyan solid 1px;
-  border-radius: 5px;
-  position: relative;
-  padding: 15px 10px;
-  line-height: 1.5;
   gap: 10px;
-  width: 66.67%; /* Two-thirds width */
-  font-size: 15px;
 }
 
-.sub-section {
+.section-title {
+  font-size: 17px;
+  color: cyan;
+  padding: 10px 0;
+  text-decoration: underline;
+}
+
+.intro-content {
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  border-radius: 5px;
-  position: relative;
-  line-height: 1.5;
-  flex-grow: 1;
+  gap: 25px;
 }
 
-.sub-section > div {
-  width: 100%;
-}
-
-.project {
+.section-container {
   display: flex;
   flex-direction: column;
+  gap: 8px;
 }
 
-.acheivements {
-  flex-grow: 1;
-}
+/* Arts page */
 
-.footer {
+.arts-gallery {
   display: flex;
-  flex-direction: column;
-  gap: 5px;
-  justify-content: center;
+  gap: 10px;
   align-items: center;
-  font-size: 14px;
-}
-
-.nix {
-  display: flex;
-  gap: 5px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
