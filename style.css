@@ -22,8 +22,26 @@ a:visited {
   color: #0097a7;
 }
 
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: cyan solid 1px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px 0;
+}
+
+.nav-header {
+  position: absolute;
+  top: -11px;
+  left: 10px;
+  background: #000000;
+}
+
 .container {
-  padding: 20px;
+  padding: 20px 20px 50px 20px;
 }
 .title {
   font-size: 25px;
@@ -56,6 +74,17 @@ a:visited {
   display: flex;
   flex-direction: column;
   gap: 8px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333333;
+  text-align: center;
+  padding: 10px 0;
+  z-index: 10;
 }
 
 /* Arts page */
