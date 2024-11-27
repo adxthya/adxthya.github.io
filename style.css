@@ -82,7 +82,14 @@ a:visited {
   font-size: 17px;
   color: #74c7ec;
   padding: 10px 0;
-  text-decoration: underline;
+}
+
+.section-header {
+  width: fit-content;
+}
+
+.divider {
+  border: solid #04a5e5 1px;
 }
 
 .intro-content {
@@ -121,7 +128,7 @@ footer {
   z-index: 10;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .container {
     padding: 20px 20px 70px 20px;
   }
@@ -129,10 +136,41 @@ footer {
 
 /* Arts page */
 
+.arts-container {
+  padding: 20px 20px;
+}
+
+.arts-nav {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border: #cdd6f4 solid 1px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  position: relative;
+  margin: 15px auto;
+  width: 75%;
+}
+
 .arts-gallery {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 50px 0px;
+}
+
+@media only screen and (max-width: 900px) {
+  .arts-nav {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    border: #cdd6f4 solid 1px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    position: relative;
+    margin: 15px auto;
+    width: 100%;
+  }
 }
