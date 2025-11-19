@@ -8,7 +8,7 @@ body {
   font-family: "Lucida Console", monospace;
   font-weight: 500;
   font-style: normal;
-  background: #1e1e2e;
+  background: #0d1116;
   color: #cdd6f4;
 }
 
@@ -27,12 +27,12 @@ a:visited {
   width: 100%;
 }
 
-.title-container>img {
+.title-container > img {
   width: 40px;
   height: 40px;
 }
 
-.title-container>img:hover {
+.title-container > img:hover {
   width: 10px;
   height: 10px;
 }
@@ -56,12 +56,12 @@ a:visited {
 }
 
 .container {
-  padding: 20px 20rem 70px 20rem;
+  padding: 20px 25rem 70px 25rem;
 }
 
 .title {
   font-size: 25px;
-  color: #cba6f7;
+  color: #ffffff;
   text-align: center;
   text-decoration: underline;
   padding: 20px;
