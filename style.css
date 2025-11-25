@@ -30,7 +30,7 @@ a:visited {
   width: 100%;
 }
 
-.title-container>img {
+.title-container > img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -39,7 +39,7 @@ a:visited {
   transition: all 0.3s ease;
 }
 
-.title-container>img:hover {
+.title-container > img:hover {
   width: 45px;
   /* Slight scale up instead of shrink */
   height: 45px;
@@ -56,9 +56,11 @@ a:visited {
   position: sticky;
   top: 20px;
   margin: 15px 0;
-  background: linear-gradient(135deg,
-      rgba(255, 255, 255, 0.05),
-      rgba(255, 255, 255, 0));
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0)
+  );
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -74,6 +76,10 @@ a:visited {
 
 .container {
   padding: 20px 25rem 70px 25rem;
+}
+
+.art-nav {
+  padding: 0px 25rem 0px 25rem;
 }
 
 .title {
@@ -134,10 +140,13 @@ footer {
   bottom: 0;
   left: 0;
   width: 100%;
-  background-color: #181825;
+  /* background-color: #181825; */
+  background-color: #0d1116;
+
   text-align: center;
   padding: 5px 0;
   z-index: 10;
+  border-top: 2px solid #181825;
 }
 
 @media only screen and (max-width: 992px) {
@@ -216,8 +225,6 @@ footer {
     filter: blur(0);
   }
 }
-
-
 
 .section-header {
   animation: fadeInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
@@ -374,6 +381,37 @@ a:hover {
   color: #a6adc8;
 }
 
+.project-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  background: #111;
+  color: #fff;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 0.95rem;
+  text-decoration: none;
+  text-align: center;
+  transition: transform 0.15s ease, background 0.2s ease;
+  cursor: pointer;
+  border: 1px solid #222;
+}
+
+.project-btn:hover {
+  transform: translateY(-2px);
+}
+
+.project-btn:active {
+  transform: translateY(0);
+  background: #222;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  animation: fadeInLeft 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards;
+  opacity: 0;
+}
+
 .skill-pills {
   display: flex;
   flex-wrap: wrap;
@@ -441,7 +479,7 @@ a:hover {
 }
 
 .title:hover {
-  animation: glitch 0.3s cubic-bezier(.25, .46, .45, .94) both infinite;
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
   color: #ffffff;
 }
 
@@ -663,4 +701,115 @@ a:hover {
 
 .contact-btn:hover img {
   transform: scale(1.1);
+}
+
+.content .timeline {
+  /* visual vars — change these if you want different colours */
+  --tl-line: #a2d2ff;
+  --tl-dot-bg: #bde0fe;
+  --tl-dot-border: #7c7c7c;
+  --tl-year: #bdbdbd;
+  --tl-org: #f3f3f3;
+  --tl-role: #a9a9a9;
+
+  position: relative;
+  margin: 2rem 0 3rem 0;
+  padding: 1rem 0 1rem 2.2rem;
+  opacity: 0;
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+  /* left padding leaves space for the vertical line */
+}
+
+/* vertical line (kept subtle) */
+.content .timeline::before {
+  content: "";
+  position: absolute;
+  /* left: 0.9rem; */
+  /* inside the content column, non-invasive */
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: var(--tl-line);
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.content .timeline-item {
+  position: relative;
+  padding: 0.5rem 0 1.25rem 1.6rem;
+  /* keeps content clear of the line */
+  display: block;
+  z-index: 1;
+}
+
+/* dot for each item */
+.content .timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -0.3rem;
+  /* lines up nicely with the vertical line */
+  top: 0.7rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--tl-dot-bg);
+  border: 2px solid var(--tl-dot-border);
+  box-sizing: border-box;
+}
+
+/* year label to the left of the content block (but still inside the flow) */
+.content .timeline-year {
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin-bottom: 0.2rem;
+  color: var(--tl-year);
+}
+
+/* content card — lightweight styling so it inherits your theme */
+.content .timeline-content {
+  margin-left: 0;
+  background: transparent;
+}
+
+/* organization and role styling */
+.content .timeline-org {
+  margin: 0;
+  font-weight: 600;
+  color: var(--tl-org);
+  letter-spacing: 0.2px;
+}
+
+.content .timeline-role {
+  margin: 0.15rem 0 0 0;
+  color: var(--tl-role);
+  font-size: 0.92rem;
+}
+
+/* Small screens: make spacing tighter and ensure nothing overlaps */
+@media (max-width: 600px) {
+  .content .timeline {
+    padding-left: 0rem;
+  }
+
+  .content .timeline::before {
+    left: 0.6rem;
+  }
+
+  .content .timeline-item::before {
+    left: 0.4rem;
+    /* top: 0.5rem; */
+    width: 10px;
+    height: 10px;
+  }
+
+  .content .timeline-item {
+    padding-left: 1.6rem;
+    padding-bottom: 1rem;
+  }
+}
+
+.timeline-desc {
+  font-size: 14px;
+  padding-top: 5px;
 }
