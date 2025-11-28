@@ -30,7 +30,7 @@ a:visited {
   width: 100%;
 }
 
-.title-container > img {
+.title-container>img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
@@ -39,7 +39,7 @@ a:visited {
   transition: all 0.3s ease;
 }
 
-.title-container > img:hover {
+.title-container>img:hover {
   width: 45px;
   /* Slight scale up instead of shrink */
   height: 45px;
@@ -56,11 +56,9 @@ a:visited {
   position: sticky;
   top: 20px;
   margin: 15px 0;
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.05),
-    rgba(255, 255, 255, 0)
-  );
+  background: linear-gradient(135deg,
+      rgba(255, 255, 255, 0.05),
+      rgba(255, 255, 255, 0));
   backdrop-filter: blur(15px);
   -webkit-backdrop-filter: blur(15px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
@@ -154,6 +152,13 @@ footer {
     padding: 20px 20px 70px 20px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .art-nav {
+    padding: 0px 20px 0px 20px;
+  }
+}
+
 
 /* Arts page */
 
@@ -376,6 +381,45 @@ a:hover {
   transition: color 0.3s ease;
 }
 
+.project-links {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.project-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  color: #cdd6f4;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.project-btn img {
+  width: 14px;
+  height: 14px;
+  opacity: 0.8;
+}
+
+.project-btn:hover {
+  background: rgba(116, 199, 236, 0.15);
+  border-color: #74c7ec;
+  color: #74c7ec;
+}
+
+.project-btn.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 .project-desc {
   font-size: 0.9rem;
   color: #a6adc8;
@@ -384,7 +428,7 @@ a:hover {
 .project-btn {
   display: inline-block;
   padding: 10px 18px;
-  background: #111;
+  background: #15181c;
   color: #fff;
   border-radius: 8px;
   font-family: inherit;
