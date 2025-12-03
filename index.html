@@ -1,350 +1,573 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
+    <link
+      rel="icon"
+      href="/favicon.png"
+      type="image/x-icon"
+    />
+    <title>adxthya</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="/favicon.png" type="image/x-icon" />
-  <title>adxthya</title>
-</head>
-
-<body>
-  <div class="container">
-    <div class="title-container">
-      <p class="title">adxthya's space</p>
-    </div>
-    <div class="nav">
-      <p class="nav-header">nav</p>
-      <a href="#">home</a><a href="./pages/art.html">arts</a>
-      <a href="https://adxthya.github.io/notes/"> notes </a>
-      <a target="_blank" href="https://github.com/adxthya/dotfiles.git">config</a>
-      <a target="_blank" href="./public/resume.pdf">
-        resume
-      </a>
-    </div>
-    <div class="content">
-      <div class="section-header">
-        <p class="section-title">Me, Myself and I</p>
-        <div class="divider"></div>
+  <body>
+    <div class="container">
+      <div class="title-container">
+        <p class="title">adxthya's space</p>
       </div>
-      <div class="bio-card">
-        <div class="bio-image">
-          <img src="https://github.com/adxthya.png" alt="avatar" />
-        </div>
-        <div class="bio-text">
-          <p>Hi, I am Adithya.</p>
-          <p>
-            I am a full stack developer, I watch movies and I read now and
-            then.
-          </p>
-          <p>
-            I use Linux BTW. Currently I'm on
-            <a target="_blank" href="https://nixos.org/">NixOS</a>
-          </p>
-          <p>My main tech stack is NextJS, TypeScript and Tailwind.</p>
-          <p>
-            I like to draw. I mainly just recreate pictures from pinterest.
-            Check out the
-            <a href="./pages/art.html">arts</a> page.
-          </p>
-        </div>
+      <div class="nav">
+        <p class="nav-header">nav</p>
+        <a href="#">home</a><a href="./pages/art.html">arts</a>
+        <a href="https://adxthya.github.io/notes/"> notes </a>
+        <a
+          target="_blank"
+          href="https://github.com/adxthya/dotfiles.git"
+          >config</a
+        >
+        <a
+          target="_blank"
+          href="./public/resume.pdf"
+        >
+          resume
+        </a>
       </div>
-      <div class="section-header">
-        <p class="section-title">My skills - A quick overview</p>
-        <div class="divider"></div>
-      </div>
-      <div class="section-container">
-        <div class="skill-category">
-          <span class="skill-label">FrontEnd</span>
-          <div class="skill-pills">
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/html5/e34f26" alt="HTML" />
-              HTML
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/css/1572b6" alt="CSS" />
-              CSS
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/react/61dafb" alt="React" />
-              React
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/react/61dafb" alt="React Native" />
-              React Native
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/tailwindcss/06b6d4" alt="Tailwind" />
-              TailwindCSS
-            </span>
-          </div>
+      <div class="content">
+        <div class="section-header">
+          <p class="section-title">Me, Myself and I</p>
+          <div class="divider"></div>
         </div>
-        <div class="skill-category">
-          <span class="skill-label">Backend</span>
-          <div class="skill-pills">
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/firebase/ffca28" alt="Firebase" />
-              FireBase
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/express/000000/ffffff" alt="Express" />
-              Express
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/flask/000000/ffffff" alt="Flask" />
-              Flask
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/nextdotjs/000000/ffffff" alt="NextJS" />
-              NextJS
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/jsonwebtokens/000000/ffffff" alt="Auth" />
-              Next-Auth
-            </span>
+        <div class="bio-card">
+          <div class="bio-image">
+            <img
+              src="https://github.com/adxthya.png"
+              alt="avatar"
+            />
           </div>
-        </div>
-        <div class="skill-category">
-          <span class="skill-label">Database</span>
-          <div class="skill-pills">
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/mongodb/47a248" alt="MongoDB" />
-              MongoDB
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/postgresql/4169e1" alt="SQL" />
-              SQL
-            </span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <span class="skill-label">Dev</span>
-          <div class="skill-pills">
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/git/f05032" alt="Git" />
-              Git
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/github/181717/ffffff" alt="Github" />
-              Github
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/docker/2496ed" alt="Docker" />
-              Docker
-            </span>
-          </div>
-        </div>
-        <div class="skill-category">
-          <span class="skill-label">OS</span>
-          <div class="skill-pills">
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/linux/fcc624" alt="Linux" />
-              Linux
-            </span>
-            <span class="pill">
-              <img src="https://cdn.simpleicons.org/apple/000000/ffffff" alt="Mac" />
-              Mac
-            </span>
-            <span class="pill">
-              <img src="https://img.icons8.com/?size=100&id=tpIcYSg4KMn0&format=png&color=00A4EF" alt="Windows" />
-              Windows
-            </span>
-          </div>
-        </div>
-      </div>
-      <!-- NEW EXPERIENCE SECTION -->
-      <div class="section-header">
-        <p class="section-title">Experience</p>
-        <div class="divider"></div>
-      </div>
-
-      <div class="timeline">
-        <div class="timeline-item">
-          <div class="timeline-year">Sep 2025 - Present</div>
-          <div class="timeline-content">
-            <p class="timeline-org">GDGoC Organizer</p>
-            <p class="timeline-role">GDGoC Organizer @ SCET</p>
-          </div>
-        </div>
-
-        <div class="timeline-item">
-          <div class="timeline-year">Sep 2024 - Sep 2025</div>
-          <div class="timeline-content">
-            <p class="timeline-org">GDG Tech Lead</p>
-            <p class="timeline-role">GDG Tech Lead @ SCET</p>
-            <p class="timeline-desc">
-              Mentored and guided members in learning and implementing new
-              technologies, fostering a culture of innovation and
-              collaboration. Conducted workshops and hackathons to introduce
-              fellow students to tech stacks and dev tools.
+          <div class="bio-text">
+            <p>Hi, I am Adithya.</p>
+            <p>
+              I am a full stack developer, I watch movies and I read now and
+              then.
+            </p>
+            <p>
+              I use Linux BTW. Currently I'm on
+              <a
+                target="_blank"
+                href="https://nixos.org/"
+                >NixOS</a
+              >
+            </p>
+            <p>My main tech stack is NextJS, TypeScript and Tailwind.</p>
+            <p>
+              I like to draw. I mainly just recreate pictures from pinterest.
+              Check out the
+              <a href="./pages/art.html">arts</a> page.
             </p>
           </div>
         </div>
+        <div class="section-header">
+          <p class="section-title">My skills - A quick overview</p>
+          <div class="divider"></div>
+        </div>
+        <div class="section-container">
+          <div class="skill-category">
+            <span class="skill-label">FrontEnd</span>
+            <div class="skill-pills">
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/html5/e34f26"
+                  alt="HTML"
+                />
+                HTML
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/css/1572b6"
+                  alt="CSS"
+                />
+                CSS
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/react/61dafb"
+                  alt="React"
+                />
+                React
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/react/61dafb"
+                  alt="React Native"
+                />
+                React Native
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/tailwindcss/06b6d4"
+                  alt="Tailwind"
+                />
+                TailwindCSS
+              </span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Backend</span>
+            <div class="skill-pills">
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/firebase/ffca28"
+                  alt="Firebase"
+                />
+                FireBase
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/express/000000/ffffff"
+                  alt="Express"
+                />
+                Express
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/flask/000000/ffffff"
+                  alt="Flask"
+                />
+                Flask
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/nextdotjs/000000/ffffff"
+                  alt="NextJS"
+                />
+                NextJS
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/jsonwebtokens/000000/ffffff"
+                  alt="Auth"
+                />
+                Next-Auth
+              </span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Database</span>
+            <div class="skill-pills">
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/mongodb/47a248"
+                  alt="MongoDB"
+                />
+                MongoDB
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/postgresql/4169e1"
+                  alt="SQL"
+                />
+                SQL
+              </span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">Dev</span>
+            <div class="skill-pills">
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/git/f05032"
+                  alt="Git"
+                />
+                Git
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/github/181717/ffffff"
+                  alt="Github"
+                />
+                Github
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/docker/2496ed"
+                  alt="Docker"
+                />
+                Docker
+              </span>
+            </div>
+          </div>
+          <div class="skill-category">
+            <span class="skill-label">OS</span>
+            <div class="skill-pills">
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/linux/fcc624"
+                  alt="Linux"
+                />
+                Linux
+              </span>
+              <span class="pill">
+                <img
+                  src="https://cdn.simpleicons.org/apple/000000/ffffff"
+                  alt="Mac"
+                />
+                Mac
+              </span>
+              <span class="pill">
+                <img
+                  src="https://img.icons8.com/?size=100&id=tpIcYSg4KMn0&format=png&color=00A4EF"
+                  alt="Windows"
+                />
+                Windows
+              </span>
+            </div>
+          </div>
+        </div>
+        <!-- NEW EXPERIENCE SECTION -->
+        <div class="section-header">
+          <p class="section-title">Experience</p>
+          <div class="divider"></div>
+        </div>
 
-        <div class="timeline-item">
-          <div class="timeline-year">Nov 2024</div>
-          <div class="timeline-content">
-            <p class="timeline-org">Tripcrops</p>
-            <p class="timeline-role">Full Stack Web Developer</p>
-            <p class="timeline-desc">
-              Developed a user authentication system and integrated database
-              functionalities using Firebase. Designed and implemented
-              multiple dynamic pages tailored for various user interactions
-              and purposes.
-            </p>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-year">Sep 2025 - Present</div>
+            <div class="timeline-content">
+              <p class="timeline-org">GDGoC Organizer</p>
+              <p class="timeline-role">GDGoC Organizer @ SCET</p>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="section-header">
-        <p class="section-title">Projects</p>
-        <div class="divider"></div>
-      </div>
-      <div class="projects-grid">
-        <div class="project-card">
-          <span class="project-title">minddump</span>
-          <span class="project-desc">just thoughts</span>
-          <div class="project-links">
-            <a target="_blank" href="https://github.com/adxthya/minddump" class="project-btn">
-              <img src="https://cdn.simpleicons.org/github/cdd6f4" alt="Code" /> Code
-            </a>
-            <a target="_blank" href="https://minddump.vercel.app/" class="project-btn">
-              <img src="https://cdn.simpleicons.org/vercel/cdd6f4" alt="Live" /> Live
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <span class="project-title">dextify</span>
-          <span class="project-desc">a discord bot</span>
-          <div class="project-links">
-            <a target="_blank" href="https://github.com/adxthya/Dextify" class="project-btn">
-              <img src="https://cdn.simpleicons.org/github/cdd6f4" alt="Code" /> Code
-            </a>
-            <a target="_blank" href="#" class="project-btn disabled">
-              <img src="https://cdn.simpleicons.org/vercel/cdd6f4" alt="Live" /> Live
-            </a>
-          </div>
-        </div>
-        <div class="project-card">
-          <span class="project-title">placement</span>
-          <span class="project-desc">simple website to faciliate placement procedures.</span>
-          <div class="project-links">
-            <a target="_blank" href="https://github.com/adxthya/placement" class="project-btn">
-              <img src="https://cdn.simpleicons.org/github/cdd6f4" alt="Code" /> Code
-            </a>
-            <a target="_blank" href="https://placement-kappa.vercel.app/" class="project-btn">
-              <img src="https://cdn.simpleicons.org/vercel/cdd6f4" alt="Live" /> Live
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="btn-container">
-        <a target="_blank" href="https://github.com/adxthya" class="project-btn">more projects</a>
-      </div>
-      <div class="section-header">
-        <p class="section-title">Achievements</p>
-        <div class="divider"></div>
-      </div>
-      <div class="achievements-grid">
-        <div class="achievement-card">
-          <div class="achievement-icon">
-            <img src="https://cdn.simpleicons.org/google/4285F4" alt="Google" />
-          </div>
-          <div class="achievement-content">
-            <p class="achievement-title">GDG Chapter Tech Lead</p>
-            <p class="achievement-desc">
-              Leading the tech community on campus
-            </p>
-          </div>
-        </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">
-            <img src="https://cdn.simpleicons.org/google/4285F4" alt="Google" />
-          </div>
-          <div class="achievement-content">
-            <p class="achievement-title">GDG Chapter Organizer</p>
-            <p class="achievement-desc">Organizing for the GDG community</p>
-          </div>
-        </div>
-        <div class="achievement-card">
-          <div class="achievement-icon">
-            <img src="https://cdn.simpleicons.org/codersrank/052FAD" alt="IBM" />
-          </div>
-          <div class="achievement-content">
-            <p class="achievement-title">IBM TechXchange</p>
-            <p class="achievement-desc">Top 100 Global Teams in Hackathon</p>
-          </div>
-        </div>
-      </div>
-      <div class="section-header">
-        <p class="section-title">Interests</p>
-        <div class="divider"></div>
-      </div>
-      <div class="interests-list">
-        <a target="_blank" href="https://letterboxd.com/adxthyax/" class="interest-item">
-          <span>Movies</span>
-          <img src="https://cdn.simpleicons.org/letterboxd/202F36/ffffff" alt="Movies" />
-        </a>
-        <a target="_blank" href="./pages/art.html" class="interest-item">
-          <span>Art</span>
-          <img src="https://cdn.simpleicons.org/pinterest/BD081C" alt="Art" />
-        </a>
-        <a target="_blank" href="https://github.com/adxthya/dotfiles.git" class="interest-item">
-          <span>Linux</span>
-          <img src="https://cdn.simpleicons.org/linux/FCC624" alt="Linux" />
-        </a>
-        <div class="interest-item">
-          <span>Books</span>
-          <img src="https://cdn.simpleicons.org/goodreads/372213" alt="Books" />
-        </div>
-      </div>
-      <div class="section-header">
-        <p class="section-title">Socials - Chat?</p>
-        <div class="divider"></div>
-      </div>
-      <div class="contacts-grid">
-        <a target="_blank" href="https://discord.com/users/adxthyax" class="contact-btn">
-          <img src="https://cdn.simpleicons.org/discord/5865F2" alt="Discord" />
-          adxthyax
-        </a>
-        <a target="_blank" href="mailto:adithyask.work@gmail.com" class="contact-btn">
-          <img src="https://cdn.simpleicons.org/gmail/EA4335" alt="Gmail" />
-          adithyakb93@gmail.com
-        </a>
-        <a target="" href="" class="contact-btn">
-          <img src="https://cdn.simpleicons.org/signal/1DA1F2" alt="Signal" />
-          adxthya.57
-        </a>
-        <a target="_blank" href="https://instagram.com/adxthyax" class="contact-btn">
-          <img src="https://cdn.simpleicons.org/instagram/5B51D8" alt="Instagram" />
-          adxthyax
-        </a>
-        <a target="_blank" href="https://github.com/adxthya" class="contact-btn">
-          <img src="https://cdn.simpleicons.org/github/ffffff" alt="Github" />
-          adxthya
-        </a>
-        <a target="_blank" href="https://www.linkedin.com/in/adithya-kb" class="contact-btn">
-          <img src="https://img.icons8.com/?size=300&id=8808&format=png&color=0A66C2" alt="Linkedin" />
-          adithya-kb
-        </a>
-      </div>
-    </div>
-    <div class="min-info">
-      <p>Just CSS and HTML</p>
-      <p>copyright @ adxthya 2025</p>
-    </div>
-    <footer>
-      <img src="./images/nix.svg" alt="nix logo" width="20" />
-      <div>
-        <a href="https://nixwebr.ing/prev/adxthya">&larr;prev</a>
-        <a href="https://nixwebr.ing">nix-webring</a>
-        <a href="https://nixwebr.ing/next/adxthya">next&rarr;</a>
-      </div>
-    </footer>
-  </div>
-</body>
 
+          <div class="timeline-item">
+            <div class="timeline-year">Sep 2024 - Sep 2025</div>
+            <div class="timeline-content">
+              <p class="timeline-org">GDG Tech Lead</p>
+              <p class="timeline-role">GDG Tech Lead @ SCET</p>
+              <p class="timeline-desc">
+                Mentored and guided members in learning and implementing new
+                technologies, fostering a culture of innovation and
+                collaboration. Conducted workshops and hackathons to introduce
+                fellow students to tech stacks and dev tools.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-year">Nov 2024</div>
+            <div class="timeline-content">
+              <p class="timeline-org">Tripcrops</p>
+              <p class="timeline-role">Full Stack Web Developer</p>
+              <p class="timeline-desc">
+                Developed a user authentication system and integrated database
+                functionalities using Firebase. Designed and implemented
+                multiple dynamic pages tailored for various user interactions
+                and purposes.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">
+          <p class="section-title">Projects</p>
+          <div class="divider"></div>
+        </div>
+        <div class="projects-grid">
+          <div class="project-card">
+            <span class="project-title">minddump</span>
+            <span class="project-desc">just thoughts</span>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://github.com/adxthya/minddump"
+                class="project-btn"
+              >
+                <img
+                  src="https://cdn.simpleicons.org/github/cdd6f4"
+                  alt="Code"
+                />
+                Code
+              </a>
+              <a
+                target="_blank"
+                href="https://minddump.vercel.app/"
+                class="project-btn"
+              >
+                <img
+                  src="https://cdn.simpleicons.org/vercel/cdd6f4"
+                  alt="Live"
+                />
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="project-title">dextify</span>
+            <span class="project-desc">a discord bot</span>
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://github.com/adxthya/Dextify"
+                class="project-btn"
+              >
+                <img
+                  src="https://cdn.simpleicons.org/github/cdd6f4"
+                  alt="Code"
+                />
+                Code
+              </a>
+              <a
+                target="_blank"
+                href="#"
+                class="project-btn disabled"
+              >
+                <img
+                  src="https://cdn.simpleicons.org/vercel/cdd6f4"
+                  alt="Live"
+                />
+                Live
+              </a>
+            </div>
+          </div>
+          <div class="project-card">
+            <span class="project-title">placement</span>
+            <span class="project-desc"
+              >simple website to faciliate placement procedures.</span
+            >
+            <div class="project-links">
+              <a
+                target="_blank"
+                href="https://github.com/adxthya/placement"
+                class="project-btn"
+              >
+                <img
+                  src="https://cdn.simpleicons.org/github/cdd6f4"
+                  alt="Code"
+                />
+                Code
+              </a>
+              <a
+                target="_blank"
+                href="https://placement-kappa.vercel.app/"
+                class="project-btn"
+              >
+                <img
+                  src="https://cdn.simpleicons.org/vercel/cdd6f4"
+                  alt="Live"
+                />
+                Live
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="btn-container">
+          <a
+            target="_blank"
+            href="https://github.com/adxthya"
+            class="project-btn"
+            >more projects</a
+          >
+        </div>
+        <div class="section-header">
+          <p class="section-title">Achievements</p>
+          <div class="divider"></div>
+        </div>
+        <div class="achievements-grid">
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <img
+                src="https://cdn.simpleicons.org/google/4285F4"
+                alt="Google"
+              />
+            </div>
+            <div class="achievement-content">
+              <p class="achievement-title">GDG Chapter Tech Lead</p>
+              <p class="achievement-desc">
+                Leading the tech community on campus
+              </p>
+            </div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <img
+                src="https://cdn.simpleicons.org/google/4285F4"
+                alt="Google"
+              />
+            </div>
+            <div class="achievement-content">
+              <p class="achievement-title">GDG Chapter Organizer</p>
+              <p class="achievement-desc">Organizing for the GDG community</p>
+            </div>
+          </div>
+          <div class="achievement-card">
+            <div class="achievement-icon">
+              <img
+                src="https://cdn.simpleicons.org/codersrank/052FAD"
+                alt="IBM"
+              />
+            </div>
+            <div class="achievement-content">
+              <p class="achievement-title">IBM TechXchange</p>
+              <p class="achievement-desc">Top 100 Global Teams in Hackathon</p>
+            </div>
+          </div>
+        </div>
+        <div class="section-header">
+          <p class="section-title">Interests</p>
+          <div class="divider"></div>
+        </div>
+        <div class="interests-list">
+          <div class="interest-item">
+            <span>Movies</span>
+            <img
+              src="https://cdn.simpleicons.org/letterboxd/202F36/ffffff"
+              alt="Movies"
+            />
+          </div>
+          <a
+            target="_blank"
+            href="./pages/art.html"
+            class="interest-item"
+          >
+            <span>Art</span>
+            <img
+              src="https://cdn.simpleicons.org/pinterest/BD081C"
+              alt="Art"
+            />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/adxthya/dotfiles.git"
+            class="interest-item"
+          >
+            <span>Linux</span>
+            <img
+              src="https://cdn.simpleicons.org/linux/FCC624"
+              alt="Linux"
+            />
+          </a>
+          <div class="interest-item">
+            <span>Books</span>
+            <img
+              src="https://cdn.simpleicons.org/goodreads/372213"
+              alt="Books"
+            />
+          </div>
+          <div class="interest-item">
+            <span>Science</span>
+            <img
+              src="https://cdn.simpleicons.org/goodreads/372213"
+              alt="Books"
+            />
+          </div>
+        </div>
+        <div class="section-header">
+          <p class="section-title">Socials - Chat?</p>
+          <div class="divider"></div>
+        </div>
+        <div class="contacts-grid">
+          <a
+            target="_blank"
+            href="https://discord.com/users/adxthyax"
+            class="contact-btn"
+          >
+            <img
+              src="https://cdn.simpleicons.org/discord/5865F2"
+              alt="Discord"
+            />
+            adxthyax
+          </a>
+          <a
+            target="_blank"
+            href="mailto:adithyask.work@gmail.com"
+            class="contact-btn"
+          >
+            <img
+              src="https://cdn.simpleicons.org/gmail/EA4335"
+              alt="Gmail"
+            />
+            adithyakb93@gmail.com
+          </a>
+          <a
+            target=""
+            href=""
+            class="contact-btn"
+          >
+            <img
+              src="https://cdn.simpleicons.org/signal/1DA1F2"
+              alt="Signal"
+            />
+            adxthya.57
+          </a>
+          <a
+            target="_blank"
+            href="https://instagram.com/adxthyax"
+            class="contact-btn"
+          >
+            <img
+              src="https://cdn.simpleicons.org/instagram/5B51D8"
+              alt="Instagram"
+            />
+            adxthyax
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/adxthya"
+            class="contact-btn"
+          >
+            <img
+              src="https://cdn.simpleicons.org/github/ffffff"
+              alt="Github"
+            />
+            adxthya
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/adithya-kb"
+            class="contact-btn"
+          >
+            <img
+              src="https://img.icons8.com/?size=300&id=8808&format=png&color=0A66C2"
+              alt="Linkedin"
+            />
+            adithya-kb
+          </a>
+        </div>
+      </div>
+      <div class="min-info">
+        <p>Just CSS and HTML</p>
+        <p>copyright @ adxthya 2025</p>
+      </div>
+      <footer>
+        <img
+          src="./images/nix.svg"
+          alt="nix logo"
+          width="20"
+        />
+        <div>
+          <a href="https://nixwebr.ing/prev/adxthya">&larr;prev</a>
+          <a href="https://nixwebr.ing">nix-webring</a>
+          <a href="https://nixwebr.ing/next/adxthya">next&rarr;</a>
+        </div>
+      </footer>
+    </div>
+  </body>
 </html>
