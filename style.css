@@ -862,3 +862,9 @@ a:hover {
 .guestbook {
   padding: 15px 0 15px 0;
 }
+
+@media only screen and (max-width: 992px) {
+  .nav-guest {
+    display: none;
+  }
+}
